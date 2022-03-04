@@ -6,6 +6,16 @@ const app = new Vue ({
         listEmail: [],
     },
 
+    methods: {
+
+        mailControl: function() {
+
+            if (this.listEmail.length === 10) {
+                return true;
+            }
+        }
+    },
+
     created() {
 
         for (let i = 0; i < 10; i++) {
